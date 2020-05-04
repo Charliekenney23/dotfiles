@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# Use python3 as default
+alias python2=$(which python)
+alias python='python3'
+
 # Dotfiles alias is to manage the dotfiles git repository
 alias dotfiles='$(which git) --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias dotfilesup='dotfiles push origin master'
