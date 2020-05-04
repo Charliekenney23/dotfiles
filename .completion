@@ -1,0 +1,11 @@
+#!/usr/bin/env
+
+# Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
+#
+#_ssh_completion() {
+#    local expl
+#    local -a themes
+#    hosts=$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')
+#    _wanted tests expl -a hosts
+#}
+#compdef _ssh_completion scp sftp ssh

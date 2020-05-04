@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Configure pure prompt
+autoload -U promptinit; promptinit
+prompt pure
+zmodload zsh/nearcolor
+zstyle :prompt:pure:path color '#73eaff'

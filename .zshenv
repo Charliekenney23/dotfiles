@@ -1,0 +1,9 @@
+export KUBECONFIG_DIR=$HOME/.kube/configs
+export KUBECONFIG=$KUBECONFIG_DIR/my-cluster-kubeconfig.yaml
+export GO111MODULE=on
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
+export GOSRC=$GOPATH/src
+export PATH="$PATH:$GOBIN"
+export PATH="$PATH:$HOME/bin"
+export TF_ACC=1
