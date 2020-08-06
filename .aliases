@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-# Use python3 as default
-alias python2=$(which python)
-alias python='python3'
-
 # Dotfiles alias is to manage the dotfiles git repository
 alias dotfiles='$(which git) --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias dotfilesup='dotfiles push origin master'
@@ -37,6 +33,9 @@ alias ls="command ls ${colorflag}"
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+
+## Always use neovim
+alias vim=`which nvim`
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
