@@ -1,3 +1,9 @@
+# assert that we're using iterm, if not, open it.
+if [[ "$LC_TERMINAL" != "iTerm2" ]]; then
+  osascript -e 'display notification "User iTerm instead" with title "Terminal" sound name "basso"'
+  open -a "/Applications/iTerm.app"
+fi
+
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
@@ -9,3 +15,4 @@ unset file;
 
 # zsh setup
 autoload bashcompinit
+
