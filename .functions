@@ -5,3 +5,10 @@ function mkcd() {
     mkdir -p "$@" && cd "$_"
 }
 
+# delete a linode by id
+function rml() {
+    local id=$1
+    linode-cli linodes delete $id
+    echo "deleted linode ($id)..."
+}
+

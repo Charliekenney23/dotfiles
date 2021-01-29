@@ -56,5 +56,12 @@ alias unmute="osascript -e 'set volume output muted false'"
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec ${SHELL} -l"
 
+# K8s
+alias k="kubectl"
+
+# Linode
+alias lc="linode-cli"
+alias lsl="lc linodes list | awk '{print $$2}' | tail -n +4"
+
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
