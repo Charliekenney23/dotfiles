@@ -7,3 +7,4 @@ export GOSRC=$GOPATH/src
 export PATH="$PATH:$GOBIN"
 export PATH="$PATH:$HOME/bin"
 export TF_ACC=1
+export GUILE_TLS_CERTIFICATE_DIRECTORY=/usr/local/etc/gnutls/
