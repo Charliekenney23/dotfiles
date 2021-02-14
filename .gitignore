@@ -1,0 +1,11 @@
+# OS
+.DS_Store
+.DS_Store?
+.Trashes
+.Spotlight-V100
+ehthumbs.db
+Thumbs.db
+
+# editor
+.idea/
+.vscode/
